@@ -11,7 +11,7 @@ export default function NotFoundPage() {
       <S.Icon>⛪</S.Icon>
       <S.ErrorCode>404</S.ErrorCode>
       <S.Message>요청하신 페이지를 찾을 수 없습니다.</S.Message>
-      <S.HomeLink to="/">홈으로 돌아가기</S.HomeLink>
+      {/* <S.HomeLink to="/">홈으로 돌아가기</S.HomeLink> */}
     </S.Wrapper>
   );
 }

@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import PlaceholderImage from '../ui/PlaceholderImage';
 import { colors, bp } from '../../styles/theme';
 
 export const S = {

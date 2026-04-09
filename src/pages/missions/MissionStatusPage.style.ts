@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import PlaceholderImage from '../../components/ui/PlaceholderImage';
 import { colors, bp } from '../../styles/theme';
 
 export const S = {

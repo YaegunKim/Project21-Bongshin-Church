@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
 import { colors } from '../styles/theme';
 
 export const S = {
