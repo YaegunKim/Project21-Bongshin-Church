@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold: #f8b551;
+  --color-brand-blue: #00a0e9;
+  --color-brand-darkgray: #666666;
+  --color-brand-lightgray: #d2d2d2;
+  --font-korean: 'Nanum Gothic', sans-serif;
+  --breakpoint-sm: 400px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1200px;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #444;
+  }
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

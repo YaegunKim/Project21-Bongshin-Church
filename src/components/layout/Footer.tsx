@@ -1,0 +1,64 @@
+import { CHURCH_INFO, WORSHIP_SCHEDULE } from '../../data/churchInfo';
+import { NAV_ITEMS } from '../../data/navigation';
+import { S } from './Footer.style';
+
+export default function Footer() {
+  return (
+    <S.FooterEl>
+      <S.Inner>
+        <S.Grid>
+          <div>
+            <S.LogoRow>
+              <S.LogoBadge>
+                <S.LogoBadgeText>봉신</S.LogoBadgeText>
+              </S.LogoBadge>
+              <S.SectionTitle>{CHURCH_INFO.name}</S.SectionTitle>
+            </S.LogoRow>
+            <S.List>
+              <li>📍 {CHURCH_INFO.address}</li>
+              <li>📞 {CHURCH_INFO.phone}</li>
+              <li>📠 팩스: {CHURCH_INFO.fax}</li>
+              <li>✉️ {CHURCH_INFO.email}</li>
+              <li>🙏 담임목사: {CHURCH_INFO.pastor}</li>
+            </S.List>
+          </div>
+
+          <div>
+            <S.SectionTitle>바로가기</S.SectionTitle>
+            <S.List>
+              {NAV_ITEMS.map((item) => (
+                <li key={item.path}>
+                  <S.NavLink
+                    to={
+                      item.children.length > 0
+                        ? item.children[0].path
+                        : item.path
+                    }
+                  >
+                    {item.label}
+                  </S.NavLink>
+                </li>
+              ))}
+            </S.List>
+          </div>
+
+          <div>
+            <S.SectionTitle>예배 시간</S.SectionTitle>
+            <S.List>
+              {WORSHIP_SCHEDULE.map((s) => (
+                <S.ScheduleItem key={s.name}>
+                  <span>{s.name}</span>
+                  <S.ScheduleTime>{s.time}</S.ScheduleTime>
+                </S.ScheduleItem>
+              ))}
+            </S.List>
+          </div>
+        </S.Grid>
+      </S.Inner>
+
+      <S.Copyright>
+        © {new Date().getFullYear()} {CHURCH_INFO.name}. All rights reserved.
+      </S.Copyright>
+    </S.FooterEl>
+  );
+}

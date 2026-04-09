@@ -1,0 +1,60 @@
+import type { Ministry } from '../types/content';
+
+export const MINISTRY_DATA: Ministry[] = [
+  {
+    key: 'infant',
+    label: '영아부',
+    ageRange: '0-2세',
+    meetingTime: '주일 오전 11:00',
+    leader: '[담당 교역자]',
+    description: '영아부는 0-2세 영아들이 처음으로 하나님을 만나는 곳입니다. 안전하고 따뜻한 환경에서 아이들이 사랑받고 있음을 느낄 수 있도록 섬깁니다.',
+  },
+  {
+    key: 'toddler',
+    label: '유아부',
+    ageRange: '3-4세',
+    meetingTime: '주일 오전 11:00',
+    leader: '[담당 교역자]',
+    description: '유아부는 3-4세 어린이들이 하나님의 사랑을 배우고 느끼는 곳입니다. 찬양과 말씀으로 아이들의 마음에 씨앗을 심습니다.',
+  },
+  {
+    key: 'kinder',
+    label: '유치부',
+    ageRange: '5-7세',
+    meetingTime: '주일 오전 11:00',
+    leader: '[담당 교역자]',
+    description: '유치부는 5-7세 어린이들이 예배의 기쁨을 배우는 곳입니다. 다양한 활동과 말씀을 통해 믿음의 기초를 세웁니다.',
+  },
+  {
+    key: 'elementary',
+    label: '초등부',
+    ageRange: '초등학생',
+    meetingTime: '주일 오전 11:00',
+    leader: '[담당 교역자]',
+    description: '초등부는 초등학생들이 예수님을 더 깊이 알아가는 곳입니다. 체계적인 성경 교육과 다양한 프로그램으로 신앙을 성장시킵니다.',
+  },
+  {
+    key: 'middle',
+    label: '중등부',
+    ageRange: '중학생',
+    meetingTime: '주일 오후 1:30',
+    leader: '[담당 교역자]',
+    description: '중등부는 중학생들이 신앙의 정체성을 확립하는 곳입니다. 말씀과 공동체를 통해 예수 그리스도의 제자로 세워집니다.',
+  },
+  {
+    key: 'high',
+    label: '고등부',
+    ageRange: '고등학생',
+    meetingTime: '주일 오후 1:30',
+    leader: '[담당 교역자]',
+    description: '고등부는 고등학생들이 하나님의 부르심을 발견하는 곳입니다. 진지한 말씀 묵상과 기도로 다음 세대의 리더를 세웁니다.',
+  },
+  {
+    key: 'youth',
+    label: '청년공동체',
+    ageRange: '대학생·청년',
+    meetingTime: '주일 오후 2:00',
+    leader: '[담당 교역자]',
+    description: '청년공동체는 대학생과 청년들이 함께 예배하고 성장하는 곳입니다. 말씀, 기도, 교제를 통해 세상 속에서 빛과 소금이 되도록 세웁니다.',
+  },
+];
