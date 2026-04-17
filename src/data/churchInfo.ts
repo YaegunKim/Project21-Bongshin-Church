@@ -12,9 +12,9 @@ export const CHURCH_INFO = {
 };
 
 export const WORSHIP_SCHEDULE: WorshipService[] = [
-  { nameKey: 'worshipSchedule.sunday', time: '오전 11:00', locationKey: 'worshipSchedule.main' },
-  { nameKey: 'worshipSchedule.school', time: '오후 4:00', locationKey: 'worshipSchedule.main' },
-  { nameKey: 'worshipSchedule.wednesdayRevivalService', time: '오후 5:00', locationKey: 'worshipSchedule.main' },
-  { nameKey: 'worshipSchedule.fridayWomenPrayerMeeting', time: '오후 4:00', locationKey: 'worshipSchedule.main' },
-  { nameKey: 'worshipSchedule.dawn', time: '오전 5:00', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.sunday', time: '11:00am', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.school', time: '4:00pm', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.wednesdayRevivalService', time: '5:00pm', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.fridayWomenPrayerMeeting', time: '4:00pm', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.dawn', time: '5:00am', locationKey: 'worshipSchedule.main' },
 ];
