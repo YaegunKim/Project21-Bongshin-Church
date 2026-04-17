@@ -18,7 +18,7 @@ export default function Footer() {
               <S.SectionTitle>{CHURCH_INFO.name}</S.SectionTitle>
             </S.LogoRow>
             <S.List>
-              <li>📍 {CHURCH_INFO.address}</li>
+              <li>📍 {t('footer.location')}</li>
               <li>📞 {CHURCH_INFO.phone}</li>
               <li>📠 {t('footer.fax')}: {CHURCH_INFO.fax}</li>
               <li>✉️ {CHURCH_INFO.email}</li>

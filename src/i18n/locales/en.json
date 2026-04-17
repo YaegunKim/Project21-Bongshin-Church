@@ -32,6 +32,7 @@
     "menuClose": "Close menu"
   },
   "footer": {
+    "location": "50 NB Khizarabad, Sargodha, Pakistan",
     "quickLinks": "Quick Links",
     "worshipTimes": "Worship Times",
     "fax": "Fax",
@@ -50,10 +51,13 @@
   },
   "welcome": {
     "label": "GREETING",
-    "title": "Pastor's Welcome Message",
-    "para1": "Welcome to the BongShin Church website.",
-    "para2": "Our church is a community built on the Word of God, practicing worship, prayer, evangelism, missions, and love for neighbors.",
-    "para3": "We warmly welcome everyone who comes. We pray that God's grace will be with your family.",
+    "title": "Senior Pastor Introduction",
+    "para1": "Greetings in the precious name of our Lord Jesus Christ.",
+    "para2": "It is my joy and honor to welcome you to (Bong Shin Holiness Church Pakistan), a place where we seek to glorify God, live according to His Word, and serve our community with love. For over twenty years, God has called me to shepherd His people and preach the message of salvation, holiness, and hope found only in Jesus Christ.",
+    "para3": "Our church began with a small group of believers who desired to see true spiritual revival in Pakistan. By God’s grace, that vision has grown into a ministry with multiple church branches, dedicated pastors, and faithful believers serving together for the advancement of God’s Kingdom.",
+    "para4": "At Bong Shin Holiness Church, we believe that the Church is not just a building, but a family — a family united in Christ to love God and love others. We are committed to raising disciples, nurturing the next generation, and bringing the light of the Gospel to every corner of Pakistan.",
+    "para5": "We welcome you to worship with us, grow in faith, and join us in this mission of transforming lives through the power of God’s Word and the work of the Holy Spirit.",
+    "para6": "May the grace and peace of our Lord Jesus Christ be with you always.",
     "pastorOf": "Senior Pastor of BongShin Church",
     "readMore": "Read More",
     "photoAlt": "Senior Pastor"
@@ -91,12 +95,14 @@
     "contact": "Contact Us"
   },
   "greeting": {
-    "pageTitle": "Pastor's Welcome Message",
+    "pageTitle": "Senior Pastor Introduction",
     "docTitle": "Greeting | BongShin Church",
-    "para1": "Shalom! Welcome to the BongShin Church website.",
-    "para2": "Our church is a community built on the Word of God, practicing worship, prayer, evangelism, missions, and love for neighbors.",
-    "para3": "We hope that the gospel of Jesus Christ will spread throughout the earth, and that BongShin Church will run together for the expansion of God's Kingdom.",
-    "para4": "We warmly welcome everyone who comes. May the love and grace of the Lord be abundant in your home.",
+    "para1": "Greetings in the precious name of our Lord Jesus Christ.",
+    "para2": "It is my joy and honor to welcome you to (Bong Shin Holiness Church Pakistan), a place where we seek to glorify God, live according to His Word, and serve our community with love. For over twenty years, God has called me to shepherd His people and preach the message of salvation, holiness, and hope found only in Jesus Christ.",
+    "para3": "Our church began with a small group of believers who desired to see true spiritual revival in Pakistan. By God’s grace, that vision has grown into a ministry with multiple church branches, dedicated pastors, and faithful believers serving together for the advancement of God’s Kingdom.",
+    "para4": "At Bong Shin Holiness Church, we believe that the Church is not just a building, but a family — a family united in Christ to love God and love others. We are committed to raising disciples, nurturing the next generation, and bringing the light of the Gospel to every corner of Pakistan.",
+    "para5": "We welcome you to worship with us, grow in faith, and join us in this mission of transforming lives through the power of God’s Word and the work of the Holy Spirit.",
+    "para6": "May the grace and peace of our Lord Jesus Christ be with you always.",
     "pastorOf": "Senior Pastor of BongShin Church",
     "photoAlt": "Senior Pastor"
   },
@@ -278,11 +284,10 @@
     "docTitle": "BongShin Church"
   },
   "worshipSchedule": {
-    "sunday1": "Sunday 1st Service",
-    "sunday2": "Sunday 2nd Service",
-    "sunday3": "Sunday 3rd Service",
-    "wednesday": "Wednesday Service",
-    "friday": "Friday Prayer Meeting",
+    "sunday": "Sunday Service",
+    "school": "Sunday School",
+    "wednesdayRevivalService": "Wednesday Revival Service",
+    "fridayWomenPrayerMeeting": "Friday Women Prayer Meeting",
     "dawn": "Early Morning Prayer",
     "main": "Main Hall"
   }

@@ -23,6 +23,9 @@ export default function WelcomeSection() {
             <S.Paragraph>{t('welcome.para1')}</S.Paragraph>
             <S.Paragraph>{t('welcome.para2')}</S.Paragraph>
             <S.Paragraph>{t('welcome.para3')}</S.Paragraph>
+            <S.Paragraph>{t('welcome.para4')}</S.Paragraph>
+            <S.Paragraph>{t('welcome.para5')}</S.Paragraph>
+            <S.Paragraph>{t('welcome.para6')}</S.Paragraph>
             <S.PastorName>{t('welcome.pastorOf')} {CHURCH_INFO.pastor}</S.PastorName>
             <S.MoreLink to="/church/greeting">{t('welcome.readMore')}</S.MoreLink>
           </S.TextCol>

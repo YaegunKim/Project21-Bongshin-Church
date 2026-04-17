@@ -23,6 +23,8 @@ export default function GreetingPage() {
           <p>{t('greeting.para2')}</p>
           <p>{t('greeting.para3')}</p>
           <p>{t('greeting.para4')}</p>
+          <p>{t('greeting.para5')}</p>
+          <p>{t('greeting.para6')}</p>
           <S.PastorName>{t('greeting.pastorOf')} {CHURCH_INFO.pastor}</S.PastorName>
         </S.TextBlock>
       </S.ContentRow>
