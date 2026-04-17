@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import SubPageLayout from '../../components/ui/SubPageLayout';
 import YoutubeEmbed from '../../components/ui/YoutubeEmbed';
 import type { VideoItem } from '../../types/content';
@@ -10,13 +11,15 @@ const VIDEOS: VideoItem[] = [
 ];
 
 export default function SpecialSongPage() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = '봉헌송/특송 | 봉신교회';
-  }, []);
+    document.title = t('specialSong.docTitle');
+  }, [t]);
 
   return (
     <SubPageLayout>
-      <S.PageTitle>봉헌송 · 특송</S.PageTitle>
+      <S.PageTitle>{t('specialSong.pageTitle')}</S.PageTitle>
       <S.Grid>
         {VIDEOS.map((v) => (
           <S.VideoCard key={v.videoId + v.date}>

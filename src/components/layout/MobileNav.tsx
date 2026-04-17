@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { NAV_ITEMS } from '../../data/navigation';
 import { useScrollLock } from '../../hooks/useScrollLock';
 import { S } from './MobileNav.style';
@@ -12,6 +13,7 @@ interface Props {
 export default function MobileNav({ isOpen, onClose }: Props) {
   const [openSection, setOpenSection] = useState<string | null>(null);
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   useScrollLock(isOpen);
 
@@ -25,8 +27,8 @@ export default function MobileNav({ isOpen, onClose }: Props) {
 
       <S.Drawer $isOpen={isOpen}>
         <S.DrawerHeader>
-          <S.DrawerTitle>봉신교회</S.DrawerTitle>
-          <S.CloseButton onClick={onClose} aria-label="메뉴 닫기">
+          <S.DrawerTitle>{t('header.churchName')}</S.DrawerTitle>
+          <S.CloseButton onClick={onClose} aria-label={t('header.menuClose')}>
             ✕
           </S.CloseButton>
         </S.DrawerHeader>
@@ -37,7 +39,7 @@ export default function MobileNav({ isOpen, onClose }: Props) {
               {item.children.length > 0 ? (
                 <>
                   <S.SectionButton onClick={() => toggleSection(item.path)}>
-                    <span>{item.label}</span>
+                    <span>{t(item.label)}</span>
                     <S.ArrowIcon>
                       {openSection === item.path ? '▲' : '▼'}
                     </S.ArrowIcon>
@@ -52,7 +54,7 @@ export default function MobileNav({ isOpen, onClose }: Props) {
                           onClick={onClose}
                           $isActive={pathname === child.path}
                         >
-                          {child.label}
+                          {t(child.label)}
                         </S.ChildLink>
                       ))}
                     </S.ChildList>
@@ -64,7 +66,7 @@ export default function MobileNav({ isOpen, onClose }: Props) {
                   onClick={onClose}
                   $isActive={pathname === item.path}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </S.RootLink>
               )}
             </S.NavSection>

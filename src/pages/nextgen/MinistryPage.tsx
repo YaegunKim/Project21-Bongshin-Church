@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import SubPageLayout from '../../components/ui/SubPageLayout';
 import type { Ministry } from '../../types/content';
 import { S } from './MinistryPage.style';
@@ -8,32 +9,35 @@ interface Props {
 }
 
 export default function MinistryPage({ ministry }: Props) {
+  const { t } = useTranslation();
+  const key = ministry.key;
+
   return (
     <SubPageLayout>
-      <S.PageTitle>{ministry.label}</S.PageTitle>
+      <S.PageTitle>{t(`ministry.${key}.label`)}</S.PageTitle>
 
       <S.Grid>
         <S.MinistryPhoto>
-          <img src={MinistryPhoto} alt={`${ministry.label} 사진`} />
-          </S.MinistryPhoto>
+          <img src={MinistryPhoto} alt={`${t(`ministry.${key}.label`)} ${t('ministry.photoAlt')}`} />
+        </S.MinistryPhoto>
 
         <div>
           <S.InfoGrid>
             <S.InfoCard>
-              <S.InfoLabel>대상</S.InfoLabel>
-              <S.InfoValue>{ministry.ageRange}</S.InfoValue>
+              <S.InfoLabel>{t('ministry.target')}</S.InfoLabel>
+              <S.InfoValue>{t(`ministry.${key}.ageRange`)}</S.InfoValue>
             </S.InfoCard>
             <S.InfoCard>
-              <S.InfoLabel>예배 시간</S.InfoLabel>
-              <S.InfoValue>{ministry.meetingTime}</S.InfoValue>
+              <S.InfoLabel>{t('ministry.worshipTime')}</S.InfoLabel>
+              <S.InfoValue>{t(`ministry.${key}.meetingTime`)}</S.InfoValue>
             </S.InfoCard>
             <S.InfoCardFull>
-              <S.InfoLabel>담당 교역자</S.InfoLabel>
+              <S.InfoLabel>{t('ministry.leader')}</S.InfoLabel>
               <S.InfoValue>{ministry.leader}</S.InfoValue>
             </S.InfoCardFull>
           </S.InfoGrid>
 
-          <S.Description>{ministry.description}</S.Description>
+          <S.Description>{t(`ministry.${key}.description`)}</S.Description>
         </div>
       </S.Grid>
     </SubPageLayout>

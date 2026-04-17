@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SubPageLayout from '../components/ui/SubPageLayout';
 import { CHURCH_INFO } from '../data/churchInfo';
 import { S } from './ContactPage.style';
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = '문의 | 봉신교회';
-  }, []);
+    document.title = t('contact.docTitle');
+  }, [t]);
 
   const [form, setForm] = useState({
     name: '',
@@ -17,7 +20,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const body = `이름: ${form.name}\n이메일: ${form.email}\n\n${form.message}`;
+    const body = `${t('contact.emailBodyName')}: ${form.name}\n${t('contact.emailBodyEmail')}: ${form.email}\n\n${form.message}`;
     window.location.href = `mailto:${CHURCH_INFO.email}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
   };
 
@@ -29,30 +32,30 @@ export default function ContactPage() {
 
   return (
     <SubPageLayout>
-      <S.PageTitle>문의하기</S.PageTitle>
+      <S.PageTitle>{t('contact.pageTitle')}</S.PageTitle>
 
       <S.Grid>
         <div>
-          <S.InfoTitle>교회 연락처</S.InfoTitle>
+          <S.InfoTitle>{t('contact.churchContact')}</S.InfoTitle>
           <S.InfoList>
             <S.InfoItem>
               <S.InfoIcon>📍</S.InfoIcon>
               <div>
-                <S.InfoLabel>주소</S.InfoLabel>
+                <S.InfoLabel>{t('contact.addressLabel')}</S.InfoLabel>
                 <S.InfoValue>{CHURCH_INFO.address}</S.InfoValue>
               </div>
             </S.InfoItem>
             <S.InfoItem>
               <S.InfoIcon>📞</S.InfoIcon>
               <div>
-                <S.InfoLabel>전화</S.InfoLabel>
+                <S.InfoLabel>{t('contact.phoneLabel')}</S.InfoLabel>
                 <S.InfoValue>{CHURCH_INFO.phone}</S.InfoValue>
               </div>
             </S.InfoItem>
             <S.InfoItem>
               <S.InfoIcon>✉️</S.InfoIcon>
               <div>
-                <S.InfoLabel>이메일</S.InfoLabel>
+                <S.InfoLabel>{t('contact.emailLabel')}</S.InfoLabel>
                 <S.InfoValue>{CHURCH_INFO.email}</S.InfoValue>
               </div>
             </S.InfoItem>
@@ -61,48 +64,48 @@ export default function ContactPage() {
 
         <S.Form onSubmit={handleSubmit}>
           <div>
-            <S.FieldLabel>이름</S.FieldLabel>
+            <S.FieldLabel>{t('contact.nameLabel')}</S.FieldLabel>
             <S.Input
               name="name"
               value={form.name}
               onChange={handleChange}
               required
-              placeholder="이름을 입력하세요"
+              placeholder={t('contact.namePlaceholder')}
             />
           </div>
           <div>
-            <S.FieldLabel>이메일</S.FieldLabel>
+            <S.FieldLabel>{t('contact.emailFieldLabel')}</S.FieldLabel>
             <S.Input
               name="email"
               type="email"
               value={form.email}
               onChange={handleChange}
               required
-              placeholder="이메일 주소를 입력하세요"
+              placeholder={t('contact.emailPlaceholder')}
             />
           </div>
           <div>
-            <S.FieldLabel>제목</S.FieldLabel>
+            <S.FieldLabel>{t('contact.subjectLabel')}</S.FieldLabel>
             <S.Input
               name="subject"
               value={form.subject}
               onChange={handleChange}
               required
-              placeholder="제목을 입력하세요"
+              placeholder={t('contact.subjectPlaceholder')}
             />
           </div>
           <div>
-            <S.FieldLabel>내용</S.FieldLabel>
+            <S.FieldLabel>{t('contact.messageLabel')}</S.FieldLabel>
             <S.Textarea
               name="message"
               value={form.message}
               onChange={handleChange}
               required
               rows={5}
-              placeholder="문의 내용을 입력하세요"
+              placeholder={t('contact.messagePlaceholder')}
             />
           </div>
-          <S.SubmitButton type="submit">문의 보내기</S.SubmitButton>
+          <S.SubmitButton type="submit">{t('contact.submitButton')}</S.SubmitButton>
         </S.Form>
       </S.Grid>
     </SubPageLayout>

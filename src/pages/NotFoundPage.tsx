@@ -1,17 +1,19 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { S } from './NotFoundPage.style';
 
 export default function NotFoundPage() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = '페이지를 찾을 수 없습니다 | 봉신교회';
-  }, []);
+    document.title = t('notFound.docTitle');
+  }, [t]);
 
   return (
     <S.Wrapper>
       <S.Icon>⛪</S.Icon>
       <S.ErrorCode>404</S.ErrorCode>
-      <S.Message>요청하신 페이지를 찾을 수 없습니다.</S.Message>
-      {/* <S.HomeLink to="/">홈으로 돌아가기</S.HomeLink> */}
+      <S.Message>{t('notFound.message')}</S.Message>
     </S.Wrapper>
   );
 }

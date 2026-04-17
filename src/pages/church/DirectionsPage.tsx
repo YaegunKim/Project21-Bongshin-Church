@@ -1,50 +1,53 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import SubPageLayout from '../../components/ui/SubPageLayout';
 import { CHURCH_INFO } from '../../data/churchInfo';
 import { S } from './DirectionsPage.style';
 
 export default function DirectionsPage() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = '오시는길 | 봉신교회';
-  }, []);
+    document.title = t('directions.docTitle');
+  }, [t]);
 
   return (
     <SubPageLayout>
-      <S.PageTitle>오시는 길</S.PageTitle>
+      <S.PageTitle>{t('directions.pageTitle')}</S.PageTitle>
 
       <S.MapPlaceholder>
         <S.MapInner>
           <S.MapIcon>🗺️</S.MapIcon>
-          <S.MapLabel>지도</S.MapLabel>
-          <S.MapSub>Kakao Maps / Google Maps 삽입 위치</S.MapSub>
+          <S.MapLabel>{t('directions.mapLabel')}</S.MapLabel>
+          <S.MapSub>{t('directions.mapSub')}</S.MapSub>
         </S.MapInner>
       </S.MapPlaceholder>
 
       <S.Grid>
         <div>
-          <S.SectionTitle>주소</S.SectionTitle>
+          <S.SectionTitle>{t('directions.addressTitle')}</S.SectionTitle>
           <S.InfoText>{CHURCH_INFO.address}</S.InfoText>
           <S.InfoText>📞 {CHURCH_INFO.phone}</S.InfoText>
         </div>
 
         <div>
-          <S.SectionTitle>대중교통</S.SectionTitle>
+          <S.SectionTitle>{t('directions.transitTitle')}</S.SectionTitle>
           <S.TransportBlock>
             <S.TransportItem>
-              <S.TransportLabel>🚇 지하철</S.TransportLabel>
-              <p style={{ margin: 0 }}>[호선] [역명]역 [번] 출구에서 도보 [분]</p>
+              <S.TransportLabel>🚇 {t('directions.subwayLabel')}</S.TransportLabel>
+              <p style={{ margin: 0 }}>{t('directions.subwayInfo')}</p>
             </S.TransportItem>
             <S.TransportItem>
-              <S.TransportLabel>🚌 버스</S.TransportLabel>
-              <p style={{ margin: 0 }}>[버스번호] [정류장명] 하차</p>
+              <S.TransportLabel>🚌 {t('directions.busLabel')}</S.TransportLabel>
+              <p style={{ margin: 0 }}>{t('directions.busInfo')}</p>
             </S.TransportItem>
           </S.TransportBlock>
         </div>
 
         <div>
-          <S.SectionTitle>자동차</S.SectionTitle>
-          <S.InfoText>[내비게이션 검색어: 봉신교회]</S.InfoText>
-          <S.InfoText>주차: 교회 주차장 이용 가능</S.InfoText>
+          <S.SectionTitle>{t('directions.carTitle')}</S.SectionTitle>
+          <S.InfoText>{t('directions.carInfo')}</S.InfoText>
+          <S.InfoText>{t('directions.parkingInfo')}</S.InfoText>
         </div>
       </S.Grid>
     </SubPageLayout>

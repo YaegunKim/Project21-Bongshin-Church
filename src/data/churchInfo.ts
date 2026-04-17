@@ -12,10 +12,10 @@ export const CHURCH_INFO = {
 };
 
 export const WORSHIP_SCHEDULE: WorshipService[] = [
-  { name: '주일 1부 예배', time: '오전 8:30', location: '본당' },
-  { name: '주일 2부 예배', time: '오전 11:00', location: '본당' },
-  { name: '주일 3부 예배', time: '오후 2:00', location: '본당' },
-  { name: '수요 예배', time: '오전 10:30', location: '본당' },
-  { name: '금요 기도회', time: '오후 7:30', location: '본당' },
-  { name: '새벽 기도회', time: '오전 5:30', location: '본당' },
+  { nameKey: 'worshipSchedule.sunday1', time: '오전 8:30', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.sunday2', time: '오전 11:00', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.sunday3', time: '오후 2:00', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.wednesday', time: '오전 10:30', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.friday', time: '오후 7:30', locationKey: 'worshipSchedule.main' },
+  { nameKey: 'worshipSchedule.dawn', time: '오전 5:30', locationKey: 'worshipSchedule.main' },
 ];

@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { CHURCH_INFO, WORSHIP_SCHEDULE } from '../../data/churchInfo';
 import { NAV_ITEMS } from '../../data/navigation';
 import { S } from './Footer.style';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <S.FooterEl>
       <S.Inner>
@@ -17,14 +20,14 @@ export default function Footer() {
             <S.List>
               <li>📍 {CHURCH_INFO.address}</li>
               <li>📞 {CHURCH_INFO.phone}</li>
-              <li>📠 팩스: {CHURCH_INFO.fax}</li>
+              <li>📠 {t('footer.fax')}: {CHURCH_INFO.fax}</li>
               <li>✉️ {CHURCH_INFO.email}</li>
-              <li>🙏 담임목사: {CHURCH_INFO.pastor}</li>
+              <li>🙏 {t('footer.pastor')}: {CHURCH_INFO.pastor}</li>
             </S.List>
           </div>
 
           <div>
-            <S.SectionTitle>바로가기</S.SectionTitle>
+            <S.SectionTitle>{t('footer.quickLinks')}</S.SectionTitle>
             <S.List>
               {NAV_ITEMS.map((item) => (
                 <li key={item.path}>
@@ -35,7 +38,7 @@ export default function Footer() {
                         : item.path
                     }
                   >
-                    {item.label}
+                    {t(item.label)}
                   </S.NavLink>
                 </li>
               ))}
@@ -43,11 +46,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <S.SectionTitle>예배 시간</S.SectionTitle>
+            <S.SectionTitle>{t('footer.worshipTimes')}</S.SectionTitle>
             <S.List>
               {WORSHIP_SCHEDULE.map((s) => (
-                <S.ScheduleItem key={s.name}>
-                  <span>{s.name}</span>
+                <S.ScheduleItem key={s.nameKey}>
+                  <span>{t(s.nameKey)}</span>
                   <S.ScheduleTime>{s.time}</S.ScheduleTime>
                 </S.ScheduleItem>
               ))}

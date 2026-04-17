@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import type { NavItem } from '../../types/navigation';
 import { S } from './SidebarNav.style';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   navItem: NavItem;
@@ -8,10 +9,11 @@ interface Props {
 
 export default function SidebarNav({ navItem }: Props) {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <S.Aside>
-      <S.SectionTitle>{navItem.label}</S.SectionTitle>
+      <S.SectionTitle>{t(navItem.label)}</S.SectionTitle>
       <S.NavList>
         {navItem.children.map((child) => (
           <S.NavLink
@@ -19,7 +21,7 @@ export default function SidebarNav({ navItem }: Props) {
             to={child.path}
             $isActive={pathname === child.path}
           >
-            {child.label}
+            {t(child.label)}
           </S.NavLink>
         ))}
       </S.NavList>

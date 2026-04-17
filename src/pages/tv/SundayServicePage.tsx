@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import SubPageLayout from '../../components/ui/SubPageLayout';
 import YoutubeEmbed from '../../components/ui/YoutubeEmbed';
 import type { VideoItem } from '../../types/content';
@@ -11,13 +12,15 @@ const VIDEOS: VideoItem[] = [
 ];
 
 export default function SundayServicePage() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = '주일예배 | 봉신교회';
-  }, []);
+    document.title = t('sunday.docTitle');
+  }, [t]);
 
   return (
     <SubPageLayout>
-      <S.PageTitle>주일예배</S.PageTitle>
+      <S.PageTitle>{t('sunday.pageTitle')}</S.PageTitle>
 
       <S.FeaturedBlock>
         <YoutubeEmbed videoId={VIDEOS[0].videoId} title={VIDEOS[0].title} />
@@ -27,7 +30,7 @@ export default function SundayServicePage() {
 
       {VIDEOS.length > 1 && (
         <>
-          <S.SectionTitle>이전 예배</S.SectionTitle>
+          <S.SectionTitle>{t('sunday.previousTitle')}</S.SectionTitle>
           <S.Grid>
             {VIDEOS.slice(1).map((v) => (
               <S.VideoCard key={v.videoId + v.date}>

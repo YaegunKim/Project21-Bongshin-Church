@@ -1,9 +1,11 @@
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { NAV_ITEMS } from '../../data/navigation';
 import { S } from './DesktopNav.style';
 
 export default function DesktopNav() {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <S.Nav>
@@ -15,7 +17,7 @@ export default function DesktopNav() {
               to={item.children.length > 0 ? item.children[0].path : item.path}
               $isActive={isActive}
             >
-              {item.label}
+              {t(item.label)}
             </S.NavLink>
 
             {item.children.length > 0 && (
@@ -26,7 +28,7 @@ export default function DesktopNav() {
                     to={child.path}
                     $isActive={pathname === child.path}
                   >
-                    {child.label}
+                    {t(child.label)}
                   </S.DropdownLink>
                 ))}
               </S.Dropdown>

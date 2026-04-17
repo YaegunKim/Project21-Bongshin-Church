@@ -29,9 +29,9 @@ export interface Ministry {
 }
 
 export interface WorshipService {
-  name: string;
+  nameKey: string;
   time: string;
-  location: string;
+  locationKey: string;
 }
 
 export interface VideoItem {

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "church": "About Church",
+    "greeting": "Pastor's Greeting",
+    "history": "Church History",
+    "staff": "Our Staff",
+    "worshipInfo": "Worship Info",
+    "newMember": "New Members",
+    "directions": "Directions",
+    "offering": "Online Offering",
+    "tv": "BongShin TV",
+    "sunday": "Sunday Service",
+    "specialSong": "Offertory / Special",
+    "choir": "Choir",
+    "nextgen": "Next Generation",
+    "infant": "Infant Ministry",
+    "toddler": "Toddler Ministry",
+    "kinder": "Kindergarten",
+    "elementary": "Elementary",
+    "middle": "Middle School",
+    "high": "High School",
+    "youth": "Youth Community",
+    "missions": "Missions",
+    "missionStatus": "Mission Status",
+    "missionCenter": "Mission Center",
+    "contact": "Contact"
+  },
+  "header": {
+    "logoAlt": "BongShin Church Logo",
+    "churchName": "BONGSHIN",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "worshipTimes": "Worship Times",
+    "fax": "Fax",
+    "pastor": "Senior Pastor"
+  },
+  "hero": {
+    "slide1Title": "Overflowing with God's Love",
+    "slide1Subtitle": "Welcome to BongShin Church",
+    "slide2Title": "Worshiping Together,",
+    "slide2Subtitle": "Growing Together at BongShin Church",
+    "slide3Title": "Mission and Service to the World",
+    "slide3Subtitle": "BongShin Church loves our neighbors",
+    "prev": "Previous",
+    "next": "Next",
+    "slideLabel": "Slide {{number}}"
+  },
+  "welcome": {
+    "label": "GREETING",
+    "title": "Pastor's Welcome Message",
+    "para1": "Welcome to the BongShin Church website.",
+    "para2": "Our church is a community built on the Word of God, practicing worship, prayer, evangelism, missions, and love for neighbors.",
+    "para3": "We warmly welcome everyone who comes. We pray that God's grace will be with your family.",
+    "pastorOf": "Senior Pastor of BongShin Church",
+    "readMore": "Read More",
+    "photoAlt": "Senior Pastor"
+  },
+  "worshipSection": {
+    "label": "WORSHIP",
+    "title": "Worship Schedule"
+  },
+  "notice": {
+    "label": "NOTICE",
+    "title": "Announcements",
+    "more": "More →",
+    "categories": {
+      "notice": "Notice",
+      "event": "Event",
+      "newMember": "New Member",
+      "mission": "Mission"
+    },
+    "items": {
+      "1": "Easter Joint Worship Service 2026",
+      "2": "April District Worship Schedule",
+      "3": "Spring Retreat Registration",
+      "4": "New Member Welcome Lunch",
+      "5": "Missionary Commissioning Service"
+    }
+  },
+  "quickLinks": {
+    "label": "QUICK LINKS",
+    "title": "Quick Links",
+    "worshipInfo": "Worship Info",
+    "newMember": "New Members",
+    "directions": "Directions",
+    "tv": "BongShin TV",
+    "offering": "Online Offering",
+    "contact": "Contact Us"
+  },
+  "greeting": {
+    "pageTitle": "Pastor's Welcome Message",
+    "docTitle": "Greeting | BongShin Church",
+    "para1": "Shalom! Welcome to the BongShin Church website.",
+    "para2": "Our church is a community built on the Word of God, practicing worship, prayer, evangelism, missions, and love for neighbors.",
+    "para3": "We hope that the gospel of Jesus Christ will spread throughout the earth, and that BongShin Church will run together for the expansion of God's Kingdom.",
+    "para4": "We warmly welcome everyone who comes. May the love and grace of the Lord be abundant in your home.",
+    "pastorOf": "Senior Pastor of BongShin Church",
+    "photoAlt": "Senior Pastor"
+  },
+  "history": {
+    "pageTitle": "Church History",
+    "docTitle": "History | BongShin Church",
+    "yearSuffix": ""
+  },
+  "staff": {
+    "pageTitle": "Our Staff",
+    "docTitle": "Staff | BongShin Church",
+    "photoAlt": "Photo"
+  },
+  "worshipInfo": {
+    "pageTitle": "Worship Schedule",
+    "docTitle": "Worship Info | BongShin Church",
+    "colService": "Service",
+    "colTime": "Time",
+    "colLocation": "Location",
+    "noticeTitle": "Notices",
+    "notice1": "Arriving 30 minutes early will enrich your worship experience.",
+    "notice2": "Please use the church parking lot.",
+    "notice3": "Those with young children may use the nursery room."
+  },
+  "newMember": {
+    "pageTitle": "New Members Guide",
+    "docTitle": "New Members | BongShin Church",
+    "intro": "Welcome to BongShin Church! Follow the steps below to become part of our church family.",
+    "contactTitle": "Contact",
+    "officeLabel": "Church Office",
+    "emailLabel": "Email",
+    "steps": {
+      "1": { "title": "First Visit", "desc": "Simply attend the Sunday service. Our ushers will be happy to assist you." },
+      "2": { "title": "New Member Registration", "desc": "Fill out a new member card after the service and a staff member will contact you." },
+      "3": { "title": "Welcome Reception", "desc": "You are invited to a new member welcome lunch after the service on the first Sunday of each month." },
+      "4": { "title": "New Member Class", "desc": "Get to know the church better through our 6-week new member nurturing program." },
+      "5": { "title": "Small Group Placement", "desc": "You will be connected to a district group or small group by area/age to begin community life." }
+    }
+  },
+  "directions": {
+    "pageTitle": "Directions",
+    "docTitle": "Directions | BongShin Church",
+    "mapLabel": "Map",
+    "mapSub": "Kakao Maps / Google Maps embed location",
+    "addressTitle": "Address",
+    "transitTitle": "Public Transit",
+    "subwayLabel": "Subway",
+    "busLabel": "Bus",
+    "subwayInfo": "[Line] [Station] Exit [#], [minutes] walk",
+    "busInfo": "[Bus #] Get off at [Stop Name]",
+    "carTitle": "By Car",
+    "carInfo": "[Navigation search: BongShin Church]",
+    "parkingInfo": "Parking: Church parking lot available"
+  },
+  "offering": {
+    "pageTitle": "Online Offering Guide",
+    "docTitle": "Online Offering | BongShin Church",
+    "intro": "You can give offerings to the accounts below. Please include your name and offering type when transferring.",
+    "holderLabel": "Account Holder",
+    "arsTitle": "ARS Offering",
+    "arsInfo": "ARS Offering Line",
+    "arsSub": "Follow the instructions after the call to give your offering.",
+    "accounts": {
+      "tithe": "Tithe / Thanksgiving",
+      "mission": "Mission Offering",
+      "building": "Building Fund"
+    }
+  },
+  "ministry": {
+    "target": "Age Group",
+    "worshipTime": "Worship Time",
+    "leader": "Ministry Leader",
+    "photoAlt": "Photo",
+    "infant": {
+      "label": "Infant Ministry",
+      "ageRange": "Ages 0–2",
+      "meetingTime": "Sunday 11:00 AM",
+      "description": "The Infant Ministry is where children ages 0–2 first encounter God. We serve in a safe and warm environment so that children can feel loved."
+    },
+    "toddler": {
+      "label": "Toddler Ministry",
+      "ageRange": "Ages 3–4",
+      "meetingTime": "Sunday 11:00 AM",
+      "description": "The Toddler Ministry is where children ages 3–4 learn and feel God's love. We plant seeds in children's hearts through praise and the Word."
+    },
+    "kinder": {
+      "label": "Kindergarten Ministry",
+      "ageRange": "Ages 5–7",
+      "meetingTime": "Sunday 11:00 AM",
+      "description": "The Kindergarten Ministry is where children ages 5–7 learn the joy of worship. We build the foundation of faith through various activities and the Word."
+    },
+    "elementary": {
+      "label": "Elementary Ministry",
+      "ageRange": "Elementary School",
+      "meetingTime": "Sunday 11:00 AM",
+      "description": "The Elementary Ministry is where elementary students get to know Jesus more deeply. We grow faith through systematic Bible education and various programs."
+    },
+    "middle": {
+      "label": "Middle School Ministry",
+      "ageRange": "Middle School",
+      "meetingTime": "Sunday 1:30 PM",
+      "description": "The Middle School Ministry is where students establish their faith identity. Students are built up as disciples of Jesus Christ through the Word and community."
+    },
+    "high": {
+      "label": "High School Ministry",
+      "ageRange": "High School",
+      "meetingTime": "Sunday 1:30 PM",
+      "description": "The High School Ministry is where students discover God's calling. We raise the next generation of leaders through serious Bible study and prayer."
+    },
+    "youth": {
+      "label": "Youth Community",
+      "ageRange": "College & Young Adults",
+      "meetingTime": "Sunday 2:00 PM",
+      "description": "The Youth Community is where college students and young adults worship and grow together. Through the Word, prayer, and fellowship, we are built up to be salt and light in the world."
+    }
+  },
+  "missionStatus": {
+    "pageTitle": "Mission & Support Status",
+    "docTitle": "Missions | BongShin Church",
+    "missionarySuffix": "Missionary",
+    "fieldLabel": "Field",
+    "orgLabel": "Organization",
+    "sinceLabel": "Sent",
+    "yearSuffix": "",
+    "photoAlt": "Photo"
+  },
+  "missionCenter": {
+    "pageTitle": "Mission Center",
+    "docTitle": "Mission Center | BongShin Church",
+    "para1": "The BongShin Church Mission Center supports domestic and international missionaries and trains congregation members interested in missions.",
+    "para2": "We send short-term mission teams every year and operate programs for missionary children's education and sabbatical support.",
+    "mainMinistryTitle": "Key Ministries",
+    "ministry1": "Missionary Sending & Support",
+    "ministry2": "Short-Term Mission Training & Sending",
+    "ministry3": "Missionary Kid (MK) Support",
+    "ministry4": "Mission Prayer Meeting",
+    "ministry5": "Mission Conference",
+    "contactTitle": "Contact",
+    "photoAlt": "Mission Center"
+  },
+  "sunday": {
+    "pageTitle": "Sunday Service",
+    "docTitle": "Sunday Service | BongShin Church",
+    "previousTitle": "Previous Services"
+  },
+  "specialSong": {
+    "pageTitle": "Offertory · Special Song",
+    "docTitle": "Offertory/Special | BongShin Church"
+  },
+  "choir": {
+    "pageTitle": "Choir",
+    "docTitle": "Choir | BongShin Church"
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "docTitle": "Contact | BongShin Church",
+    "churchContact": "Church Contact",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailFieldLabel": "Email",
+    "emailPlaceholder": "Enter your email address",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Enter a subject",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message",
+    "submitButton": "Send Message",
+    "emailBodyName": "Name",
+    "emailBodyEmail": "Email"
+  },
+  "notFound": {
+    "message": "The page you requested could not be found.",
+    "docTitle": "Page Not Found | BongShin Church"
+  },
+  "home": {
+    "pageTitle": "Home",
+    "docTitle": "BongShin Church"
+  },
+  "worshipSchedule": {
+    "sunday1": "Sunday 1st Service",
+    "sunday2": "Sunday 2nd Service",
+    "sunday3": "Sunday 3rd Service",
+    "wednesday": "Wednesday Service",
+    "friday": "Friday Prayer Meeting",
+    "dawn": "Early Morning Prayer",
+    "main": "Main Hall"
+  }
+}

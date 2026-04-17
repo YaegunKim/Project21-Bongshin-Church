@@ -61,6 +61,11 @@ export const S = {
     font-weight: 300;
     color: ${colors.gray800};
   `,
+  RightGroup: styled.div`
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  `,
   HamburgerButton: styled.button`
     display: flex;
     flex-direction: column;
